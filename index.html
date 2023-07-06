@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI Calc</title>
+</head>
+<script src="https://kit.fontawesome.com/b1e1d7eb70.js" crossorigin="anonymous"></script>
+<body>
+  <script src="main.js"></script>
+  <div class="calculator">
+    <h3>BMI Calculator <i class="fa-solid fa-calculator"></i></h3>
+    <div class="bmiInput">
+      <label for="height">Height(cm):</label>
+      <br>
+      <input type="number" id="height">
+      <br>
+      <label for="weight">Weight(kg):</label>
+      <br>
+      <input type="number" id="weight">
+      <div class="btn">
+        <button onclick="showBMI()">Calculate</button>
+        <button onclick="userReset()">Reset</button>
+      </div>
+    </div>
+    <div class="bmiStatus">
+      <h3>Result here:</h3>
+      <p id="result"></p>
+    </div>
+    <p id="footer">Made by Viel</p>
+  </div>
+</body>
+</html>
